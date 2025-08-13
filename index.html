@@ -2,19 +2,70 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>RCA Quiz</title>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+    }
+    #quiz-header {
+      font-size: 2.5em;
+      text-align: center;
+      margin-bottom: 20px;
+      position: sticky;
+      top: 0;
+      background: #fff;
+      padding: 10px 0;
+      z-index: 10;
+    }
+    #quiz-container {
+      width: 90%;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    #quiz-form .form-group label {
+      font-size: 1.4em;
+    }
+    #options .radio label {
+      font-size: 1.2em;
+    }
+    #quiz-form button {
+      font-size: 1.3em;
+      padding: 12px;
+    }
+        footer {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      font-size: 0.9em;
+      color: #666;
+      padding: 10px 0;
+      background: #f9f9f9;
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
-    <h1 class="text-center">RCA Quiz</h1>
+  <div id="quiz-header">RCA Quiz</div>
+  <div id="quiz-container" class="container well">
     <form id="quiz-form">
       <div class="form-group">
         <label id="qHeader"></label>
       </div>
       <div class="form-group" id="options"></div>
-      <button type="submit" class="btn btn-primary">Next</button>
+      <button type="submit" class="btn btn-primary btn-block">Next</button>
     </form>
   </div>
-  <script src="index.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="index.js">
+
+  </script>
 </body>
+<footer>Built by James Warriner</footer>
+</html>
